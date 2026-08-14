@@ -171,8 +171,9 @@ The application should open `SecondActivity` and display the username. The passw
 **Pass**
 
 ### Screenshot
+<img width="540" height="1200" alt="login_screen" src="https://github.com/user-attachments/assets/1be2a95d-a4b0-4245-91b6-25c3660b65ed" />
 
-![Test Case 1](Screenshots/test_case_1.jpeg)
+<img width="540" height="1200" alt="test_case_1" src="https://github.com/user-attachments/assets/1d266aec-f8db-4d42-a723-dab78c9582b9" />
 
 ---
 
@@ -193,7 +194,8 @@ The application should successfully transfer the entered information to `SecondA
 
 ### Screenshot
 
-![Test Case 2](Screenshots/test_case_2.jpeg)
+<img width="540" height="1200" alt="test_case_2" src="https://github.com/user-attachments/assets/457e2b5a-477b-43fa-8e9d-168140fda3e0" />
+
 
 ---
 
@@ -214,7 +216,8 @@ The application should successfully transfer the entered information to `SecondA
 
 ### Screenshot
 
-![Test Case 3](Screenshots/test_case_3.jpeg)
+<img width="540" height="1200" alt="test_case_3" src="https://github.com/user-attachments/assets/f9cf9f76-d398-4cb2-bdf1-b6606962a882" />
+
 
 ---
 
