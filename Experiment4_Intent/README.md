@@ -153,57 +153,76 @@ AndroidManifest.xml
 
 Registers the Activities used by the application.
 
-Test Cases
-Test Case 1 – USN and Name
-Input
-Username: Shrawan Gautam
-Password: 25MCAR0229
-Expected Result
+# Test Cases
 
-The application should open SecondActivity and display the username. The password should be displayed in masked form.
+## Test Case 1 – USN and Name
 
-#Result
-Pass
+### Input
 
-Screenshot
-<img width="540" height="1200" alt="exp4Loginpage" src="https://github.com/user-attachments/assets/4231ed93-b43e-4a6c-90b0-650e78014389" />
-<img width="540" height="1200" alt="Test case -1 Outpout" src="https://github.com/user-attachments/assets/4c784e57-7775-42b9-85f7-cdc2c96b54d6" />
+**Username:** Shrawan Gautam  
+**Password:** 25MCAR0229
 
-Test Case 2 – 
-Input
-Username: Android
-Password: Exp4
-Expected Result
+### Expected Result
 
-The application should successfully transfer the entered information to SecondActivity and display the user information.
+The application should open `SecondActivity` and display the username. The password should be displayed in masked form.
 
-#Result
-Pass
+### Result
 
-Screenshot
-<img width="540" height="1200" alt="Test case -2" src="https://github.com/user-attachments/assets/c8bf8628-1dfb-4269-bc2f-47c7df54f637" />
+**Pass**
 
-Test Case 3 – Another Valid User
-Input
-Username: experiment4
-Password: Testong
-Expected Result
+### Screenshot
 
-SecondActivity should open successfully and display the received username and masked password.
+![Test Case 1](Screenshots/test_case_1.jpeg)
 
-#Result
-Pass
+---
 
-Screenshot
-<img width="540" height="1200" alt="Testcase -3" src="https://github.com/user-attachments/assets/aeee8fe9-66ea-4269-979e-89e81df4da75" />
+## Test Case 2 – Valid User
 
-#Output
+### Input
 
-The Login screen provides a modern user interface with a background image, username and password fields, and a circular login button.
+**Username:** Android  
+**Password:** Exp4
 
-After successful login, the second Activity displays the received account information.
+### Expected Result
 
-Login Screen
+The application should successfully transfer the entered information to `SecondActivity` and display the user information.
+
+### Result
+
+**Pass**
+
+### Screenshot
+
+![Test Case 2](Screenshots/test_case_2.jpeg)
+
+---
+
+## Test Case 3 – Another Valid User
+
+### Input
+
+**Username:** experiment4  
+**Password:** Testong
+
+### Expected Result
+
+`SecondActivity` should open successfully and display the received username and masked password.
+
+### Result
+
+**Pass**
+
+### Screenshot
+
+![Test Case 3](Screenshots/test_case_3.jpeg)
+
+---
+
+# Output
+
+## Login Screen
+
+![Login Screen](Screenshots/login_screen.jpeg)
 
 #Result
 
