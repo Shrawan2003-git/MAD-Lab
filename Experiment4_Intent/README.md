@@ -162,11 +162,12 @@ Expected Result
 
 The application should open SecondActivity and display the username. The password should be displayed in masked form.
 
-Result
-
+#Result
 Pass
 
 Screenshot
+<img width="540" height="1200" alt="exp4Loginpage" src="https://github.com/user-attachments/assets/4231ed93-b43e-4a6c-90b0-650e78014389" />
+<img width="540" height="1200" alt="Test case -1 Outpout" src="https://github.com/user-attachments/assets/4c784e57-7775-42b9-85f7-cdc2c96b54d6" />
 
 Test Case 2 – 
 Input
@@ -176,11 +177,11 @@ Expected Result
 
 The application should successfully transfer the entered information to SecondActivity and display the user information.
 
-Result
-
+#Result
 Pass
 
 Screenshot
+<img width="540" height="1200" alt="Test case -2" src="https://github.com/user-attachments/assets/c8bf8628-1dfb-4269-bc2f-47c7df54f637" />
 
 Test Case 3 – Another Valid User
 Input
@@ -190,11 +191,11 @@ Expected Result
 
 SecondActivity should open successfully and display the received username and masked password.
 
-Result
-
+#Result
 Pass
 
 Screenshot
+<img width="540" height="1200" alt="Testcase -3" src="https://github.com/user-attachments/assets/aeee8fe9-66ea-4269-979e-89e81df4da75" />
 
 #Output
 
