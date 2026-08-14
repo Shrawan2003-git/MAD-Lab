@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login_background"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
+
+    <!-- Dark overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Menu -->
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:text="☰"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp" />
+
+            <!-- Login Content -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingStart="42dp"
+                android:paddingEnd="42dp"
+                android:paddingTop="125dp"
+                android:paddingBottom="30dp">
+
+                <!-- LOGIN -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L O G I N"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp"
+                    android:letterSpacing="0.18"
+                    android:layout_marginBottom="65dp" />
+
+                <!-- Username -->
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@drawable/bg_login_input"
+                    android:hint="u s e r n a m e"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#E5E5E5"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:letterSpacing="0.08"
+                    android:singleLine="true"
+                    android:inputType="textPersonName"
+                    android:gravity="center"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="25dp" />
+
+                <!-- Password -->
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@drawable/bg_login_input"
+                    android:hint="p a s s w o r d"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#E5E5E5"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:letterSpacing="0.08"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:gravity="center"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="48dp" />
+
+                <!-- Circular Login Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:text="→"
+                    android:textColor="#FFFFFF"
+                    android:textSize="46sp"
+                    android:gravity="center"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:insetLeft="0dp"
+                    android:insetRight="0dp"
+                    app:backgroundTint="#48B7D6"
+                    app:cornerRadius="70dp"
+                    app:rippleColor="#66FFFFFF" />
+
+                <!-- New Account -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:text="N E W   A C C O U N T"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:letterSpacing="0.08" />
+
+                <!-- Forgot Password -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="F O R G O T   P A S S W O R D"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:letterSpacing="0.08" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</FrameLayout>

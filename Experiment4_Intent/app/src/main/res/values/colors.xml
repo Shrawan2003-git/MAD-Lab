@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_purple">#6E4BB5</color>
+    <color name="primary_light_purple">#EBE4FF</color>
+    <color name="accent_blue">#48B7D6</color>
+    <color name="text_dark">#252333</color>
+    <color name="text_grey">#777582</color>
+    <color name="bg_light">#F7F5FC</color>
+
+    <!-- Gradient Colors -->
+    <color name="grad_start">#6E4BB5</color>
+    <color name="grad_end">#48B7D6</color>
+</resources>
