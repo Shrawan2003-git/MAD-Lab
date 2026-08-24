@@ -178,7 +178,7 @@ The following screenshot shows the final user interface of the Android Notificat
 
 ### Application UI
 
-<img src="./Screenshots/ui.jpeg" width="300">
+<img width="540" height="1200" alt="UI" src="https://github.com/user-attachments/assets/6da9fee1-67ad-4ca8-a348-795c258f8ef3" />
 
 The application provides a modern notification interface where the user can enter the notification message and trigger an Android notification.
 
@@ -199,7 +199,7 @@ The application should successfully generate an Android notification containing 
 
 **Screenshot:**
 
-<img src="./Screenshots/test_case_1.jpeg" width="300">
+<img width="540" height="1200" alt="test_case_1" src="https://github.com/user-attachments/assets/c07701b9-6e01-4a26-ad42-50ae12a3498e" />
 
 ### Test Case 2 – Notification Message
 
@@ -215,8 +215,8 @@ The application should display a notification with the entered title and message
 **Result:** PASS
 
 **Screenshot:**
+<img width="540" height="1200" alt="test_case_2" src="https://github.com/user-attachments/assets/592c95ed-302b-4952-897a-7a6f59dafdd9" />
 
-<img src="./Screenshots/test_case_2.jpeg" width="300">
 ### Test Case 3 – Another Notification
 
 **Input**
@@ -232,7 +232,7 @@ The application should successfully generate and display the Android notificatio
 
 **Screenshot:**
 
-<img src="./Screenshots/test_case_3.jpeg" width="300">
+<img width="540" height="1200" alt="test_case_3" src="https://github.com/user-attachments/assets/2881a709-b2f1-4d7c-9e8a-5951c593888c" />
 
 ##Result
 
