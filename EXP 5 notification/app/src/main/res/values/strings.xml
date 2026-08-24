@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Experiment5_Notifications</string>
+    <string name="notification_title">Experiment 5</string>
+    <string name="notification_text">Your Android notification is working successfully!</string>
+    <string name="status_sent">Notification sent successfully</string>
+    <string name="status_ready">Ready to notify</string>
+    <string name="channel_name">Experiment 5 Notifications</string>
+    <string name="channel_description">Notification channel for MAD Lab Experiment 5</string>
+    <string name="hint_name">Enter Name</string>
+    <string name="hint_usn">Enter USN</string>
+    <string name="hint_title">Notification Title</string>
+    <string name="hint_message">Notification Message</string>
+    <string name="btn_send">SEND NOTIFICATION</string>
+    <string name="error_name">Enter your name</string>
+    <string name="error_usn">Enter your USN</string>
+    <string name="error_title">Enter notification title</string>
+    <string name="error_message">Enter notification message</string>
+    <string name="toast_denied">Notification permission denied</string>
+    <string name="toast_sent">Notification sent successfully</string>
+</resources>
