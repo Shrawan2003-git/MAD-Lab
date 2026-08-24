@@ -172,29 +172,67 @@ NotificationManagerCompat.from(this)
         notification
     )
 
-##Output Screenshot
-Application User Interface
+## Output
 
 The following screenshot shows the final user interface of the Android Notification application.
 
-Test Cases
-Test Case 1 – USN and Name
-Input
+### Application UI
 
-Notification Type: Academic
-Notification Priority: High
+<img src="./Screenshots/ui.jpeg" width="300">
 
-Test Case 2 – Assignment Notification
-Input
+The application provides a modern notification interface where the user can enter the notification message and trigger an Android notification.
 
-Notification Type: Assignment
-Notification Priority: Medium
+## Test Cases
 
-Test Case 3 – Examination Notification
-Input
+### Test Case 1 – USN and Name
 
-Notification Type: Examination
-Notification Priority: High
+**Input**
+
+- Notification Title: Present
+- Notification Message: Shrawan Gautam, 25MCAR0229
+
+**Expected Result**
+
+The application should successfully generate an Android notification containing the entered notification details.
+
+**Result:** PASS
+
+**Screenshot:**
+
+<img src="./Screenshots/test_case_1.jpeg" width="300">
+
+### Test Case 2 – Notification Message
+
+**Input**
+
+- Notification Title: Placement
+- Notification Message: Prepare for interview
+
+**Expected Result**
+
+The application should display a notification with the entered title and message.
+
+**Result:** PASS
+
+**Screenshot:**
+
+<img src="./Screenshots/test_case_2.jpeg" width="300">
+### Test Case 3 – Another Notification
+
+**Input**
+
+- Notification Title: Examination
+- Notification Message: Prepare Unit 1 & 2
+
+**Expected Result**
+
+The application should successfully generate and display the Android notification.
+
+**Result:** PASS
+
+**Screenshot:**
+
+<img src="./Screenshots/test_case_3.jpeg" width="300">
 
 ##Result
 
