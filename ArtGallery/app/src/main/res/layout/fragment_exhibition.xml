@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/gallery_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Immersive Dark Card Container -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="@color/gallery_card_background"
+            app:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Artwork Image -->
+                <ImageView
+                    android:id="@+id/artworkImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/artwork_image"/>
+
+                <!-- Content Area -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <!-- Category Badge -->
+                    <TextView
+                        android:id="@+id/categoryText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PAINTINGS"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:letterSpacing="0.2"
+                        android:textColor="@color/gallery_primary"
+                        android:background="@drawable/bg_card"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"/>
+
+                    <!-- Title -->
+                    <TextView
+                        android:id="@+id/artworkTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Starry Night"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gallery_text_primary"
+                        android:layout_marginTop="14dp"/>
+
+                    <!-- Artist Name -->
+                    <TextView
+                        android:id="@+id/artistName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vincent van Gogh"
+                        android:textSize="16sp"
+                        android:textColor="@color/gallery_text_secondary"
+                        android:layout_marginTop="6dp"/>
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gallery_divider"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="18dp"/>
+
+                    <!-- Description -->
+                    <TextView
+                        android:id="@+id/descriptionText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textSize="15sp"
+                        android:textColor="@color/gallery_text_secondary"
+                        android:lineSpacingExtra="6dp"/>
+
+                    <!-- View Artwork Button -->
+                    <Button
+                        android:id="@+id/viewArtworkButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="VIEW ARTWORK DETAILS"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.05"
+                        android:textSize="14sp"
+                        android:textColor="@color/gallery_selected_tab_text"
+                        android:background="@drawable/bg_button"
+                        android:elevation="6dp"
+                        android:layout_marginTop="28dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

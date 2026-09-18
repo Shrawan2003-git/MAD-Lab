@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application -->
+    <string name="app_name">ArtGallery</string>
+
+    <!-- Main Screen -->
+    <string name="gallery_title">ArtGallery</string>
+    <string name="gallery_subtitle">Explore the World of Art</string>
+
+    <!-- Exhibition Categories -->
+    <string name="paintings">Paintings</string>
+    <string name="sculptures">Sculptures</string>
+    <string name="photography">Photography</string>
+
+    <!-- Exhibition -->
+    <string name="exhibition">Exhibition</string>
+    <string name="view_artwork">View Artwork</string>
+    <string name="artwork_details">Artwork Details</string>
+
+    <!-- Painting -->
+    <string name="painting_artist">Vincent van Gogh</string>
+    <string name="painting_title">Starry Night</string>
+    <string name="painting_description">A famous painting depicting a night sky filled with swirling stars above a peaceful village.</string>
+
+    <!-- Sculpture -->
+    <string name="sculpture_artist">Auguste Rodin</string>
+    <string name="sculpture_title">The Thinker</string>
+    <string name="sculpture_description">A renowned bronze sculpture representing a man deep in meditation and thought.</string>
+
+    <!-- Photography -->
+    <string name="photography_artist">Ansel Adams</string>
+    <string name="photography_title">Mountain Landscape</string>
+    <string name="photography_description">A classic landscape photograph capturing the beauty and dramatic atmosphere of the mountains.</string>
+
+    <!-- Artwork Activity -->
+    <string name="artist_information">Artist Information</string>
+    <string name="complete_description">Complete Artwork Description</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="added_to_favorites">Added to Favorites</string>
+
+    <!-- Notification -->
+    <string name="favorite_notification_title">Added to Favorites</string>
+    <string name="favorite_notification_channel_name">ArtGallery Favorites</string>
+    <string name="favorite_notification_channel_description">Notifications for artworks added to favorites</string>
+
+    <!-- Accessibility -->
+    <string name="artwork_image">Artwork image</string>
+    <string name="back_button">Back</string>
+
+</resources>

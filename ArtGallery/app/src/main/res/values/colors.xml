@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Luxury Museum Palette -->
+    <color name="gallery_background">#121212</color>
+    <color name="gallery_surface">#1E1E1E</color>
+    <color name="gallery_primary">#D4AF37</color>
+    <color name="gallery_primary_variant">#AA8C2C</color>
+    <color name="gallery_accent">#E5C558</color>
+    <color name="gallery_text_primary">#FFFFFF</color>
+    <color name="gallery_text_secondary">#B3B3B3</color>
+    <color name="gallery_card_background">#1A1A1A</color>
+    <color name="gallery_divider">#2A2A2A</color>
+    <color name="gallery_selected_tab">#D4AF37</color>
+    <color name="gallery_unselected_tab">#222222</color>
+    <color name="gallery_selected_tab_text">#121212</color>
+    <color name="gallery_unselected_tab_text">#E0E0E0</color>
+</resources>

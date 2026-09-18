@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.ArtGallery" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Main Colors -->
+        <item name="android:fontFamily">sans</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/gallery_primary</item>
+        <item name="android:navigationBarColor">@color/gallery_background</item>
+
+        <!-- Light Status Bar Icons -->
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Window Background -->
+        <item name="android:windowBackground">@color/gallery_background</item>
+
+        <!-- Default Text -->
+        <item name="android:textColorPrimary">@color/gallery_text_primary</item>
+        <item name="android:textColorSecondary">@color/gallery_text_secondary</item>
+
+        <!-- Buttons -->
+        <item name="colorPrimary">@color/gallery_primary</item>
+        <item name="colorSecondary">@color/gallery_accent</item>
+
+    </style>
+
+</resources>
