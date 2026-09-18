@@ -147,6 +147,79 @@ Important lifecycle methods include:
 The lifecycle execution can be observed through Android Studio Logcat.
 
 ---
+---
+
+# Project Folder Structure
+
+The project is organized into different folders and files for better separation of UI, application logic, resources, and testing.
+
+```text
+ArtGallery/
+│
+├── app/
+│   ├── src/
+│   │   ├── androidTest/
+│   │   │   └── java/
+│   │   │       └── com/example/artgallery/
+│   │   │           └── ExampleInstrumentedTest.kt
+│   │   │
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   ├── MainActivity.kt
+│   │   │   │   └── com/example/artgallery/
+│   │   │   │       ├── ArtworkActivity.kt
+│   │   │   │       └── ExhibitionFragment.kt
+│   │   │   │
+│   │   │   ├── res/
+│   │   │   │   ├── drawable/
+│   │   │   │   │   ├── artwork_painting.xml
+│   │   │   │   │   ├── artwork_photography.xml
+│   │   │   │   │   ├── artwork_sculpture.xml
+│   │   │   │   │   ├── bg_button.xml
+│   │   │   │   │   ├── bg_card.xml
+│   │   │   │   │   └── bg_main.xml
+│   │   │   │   │
+│   │   │   │   ├── layout/
+│   │   │   │   │   ├── activity_main.xml
+│   │   │   │   │   ├── fragment_exhibition.xml
+│   │   │   │   │   └── activity_artwork.xml
+│   │   │   │   │
+│   │   │   │   ├── mipmap/
+│   │   │   │   ├── values/
+│   │   │   │   │   ├── colors.xml
+│   │   │   │   │   ├── strings.xml
+│   │   │   │   │   └── themes.xml
+│   │   │   │   │
+│   │   │   │   └── values-night/
+│   │   │   │       └── themes.xml
+│   │   │   │
+│   │   │   ├── AndroidManifest.xml
+│   │   │   └── keepRules/
+│   │   │
+│   │   └── test/
+│   │       └── java/
+│   │           └── com/example/artgallery/
+│   │
+│   ├── build.gradle.kts
+│   └── .gitignore
+│
+├── Screenshots/
+│   ├── Test Case 1 Screenshot
+│   ├── Test Case 2 Screenshot
+│   ├── Test Case 3 Screenshot
+│   └── Output Screenshots
+│
+├── gradle/
+│   ├── libs.versions.toml
+│   └── wrapper/
+│
+├── .gitignore
+├── build.gradle.kts
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── settings.gradle.kts
+└── README.md
 
 # Application Flow
 
