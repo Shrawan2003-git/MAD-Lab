@@ -564,21 +564,6 @@ Thus, the objective of creating an adaptive UI using **ListView and ImageView** 
 
 ---
 
-# 16. GitHub Submission Contents
-
-The GitHub repository contains:
-
-- Complete Android project
-- Kotlin source files
-- XML layouts
-- Drawable resources
-- Application background
-- Gradle configuration
-- Project folder structure
-- README documentation
-- Test case screenshots
-
----
 
 ## Student
 
