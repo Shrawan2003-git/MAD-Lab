@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="background">#F7F8FC</color>
+    <color name="surface">#FFFFFF</color>
+
+    <color name="primary">#3157D5</color>
+    <color name="primary_dark">#2341A8</color>
+
+    <color name="text_primary">#182235</color>
+    <color name="text_secondary">#68738A</color>
+    <color name="text_muted">#8E98AA</color>
+
+    <color name="border">#E6E9F0</color>
+
+    <color name="student_card">#EAF0FF</color>
+    <color name="library_bg">#E9EFFF</color>
+    <color name="lab_bg">#E8F8F1</color>
+    <color name="cafeteria_bg">#FFF1E5</color>
+    <color name="sports_bg">#F1EBFF</color>
+    <color name="admin_bg">#E7F6F8</color>
+
+</resources>
