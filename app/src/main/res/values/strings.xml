@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Student Learning Hub</string>
+    <string name="welcome_title">Welcome to Student Learning Hub</string>
+    <string name="experiment_desc">MAD Lab Experiment 8\nMenus and WebView in Android</string>
+    <string name="student_name_label">Student Name:</string>
+    <string name="student_name">Shrawan Gautam</string>
+    <string name="student_usn_label">USN:</string>
+    <string name="student_usn">25MCAR0229</string>
+    <string name="open_learning_content">Open Learning Content</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_open_webview">Open Learning Content</string>
+    <string name="menu_profile">Student Profile</string>
+    <string name="menu_about">About Experiment</string>
+    <string name="menu_refresh">Refresh Page</string>
+    <string name="menu_exit">Exit</string>
+
+    <string name="webview_title">Learning Content</string>
+    <string name="profile_title">Student Profile</string>
+    <string name="about_title">About Experiment</string>
+    <string name="about_desc">Experiment: 8\nSubject: Mobile Application Development\nTopic: Menus and WebView in Android\nTechnologies: Android Studio, Kotlin, XML, Android Menus, WebView.</string>
+</resources>
