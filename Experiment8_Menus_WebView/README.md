@@ -42,28 +42,7 @@ Unlike an external browser, the `WebView` acts as a component inside the app, al
 - **Offline Fallback:** Displays a localized HTML page if the internet is disconnected.
 - **Smart Back Navigation:** Back button gracefully traverses website history before exiting the `WebView`.
 
-## 10. Prerequisites and Software Requirements
-- Android Studio Ladybug (or higher)
-- Android SDK (API 24 to API 37)
-- Gradle Plugin 8+
-- Active Internet Connection
-
-## 11. Project Installation and Setup
-1. Clone the repository to your local machine:
-   ```bash
-   git clone <repository-url>
-   ```
-2. Open the project folder `Exp8MenusandWebView` in Android Studio.
-3. Allow Gradle to sync dependencies.
-
-## 12. Steps to Build and Run the Application
-1. Connect an Android device or start an Android Emulator.
-2. Click the **Run** button (green play icon) in Android Studio.
-3. Once built, the app will launch displaying the Student Dashboard.
-4. Use the Options Menu in the top right to navigate.
-5. Tap "Open Learning Content" to view the embedded `WebView`.
-
-## 13. Project Folder and File Structure
+## 10. Project Folder and File Structure
 ```text
 D:/MAD-Lab/Exp8MenusandWebView/
 ├── app/
@@ -89,20 +68,20 @@ D:/MAD-Lab/Exp8MenusandWebView/
 └── settings.gradle.kts
 ```
 
-## 14. Important Files and Their Responsibilities
+## 11. Important Files and Their Responsibilities
 - **`MainActivity.kt`**: Initializes the main dashboard, inflates the Options Menu, and handles actions like opening Dialogs or the WebView screen.
 - **`WebViewActivity.kt`**: Manages the `WebView`, configures `WebViewClient` for errors/loading, `WebChromeClient` for the progress bar, and handles the back-press logic for browser history.
 - **`activity_main.xml`**: Uses Coordinator Layout and Material Cards to create a beautiful aesthetic UI.
 - **`main_menu.xml`**: Defines the list of items inside the Android Options Menu.
 
-## 15. Application Workflow
+## 12. Application Workflow
 1. User opens the app → `MainActivity` launches.
 2. Dashboard displays Name and USN.
 3. User opens Options Menu → Selects "Student Profile" → Native `AlertDialog` shows details.
 4. User selects "Open Learning Content" → `WebViewActivity` launches.
 5. App attempts to fetch `https://developer.android.com/`. If successful, the page loads. If it fails, `error.html` loads from assets.
 
-## 16. Test Cases and Evidence
+## 13. Test Cases and Evidence
 
 ### TC01 — Home Screen and Student Identity
 **Objective:** Verify that the application launches correctly and displays the student information.
@@ -138,18 +117,18 @@ D:/MAD-Lab/Exp8MenusandWebView/
 **Screenshot:**
 ![WebView Navigation](screenshots/test-case-03-webview.png)
 
-## 17. Actual Screenshots of the Final Application
+## 14. Actual Screenshots of the Final Application
 *(See Test Cases section above for embedded screenshots).*
 
-## 18. Student Details
+## 15. Student Details
 **Student Name:** Shrawan Gautam
 **USN:** 25MCAR0229
 
-## 19. Learning Outcomes
+## 16. Learning Outcomes
 - Successfully implemented a native Android Options Menu.
 - Integrated a `WebView` seamlessly into an Android application.
 - Handled offline fallback routing safely using local HTML assets.
 - Designed a structured, beautiful layout using modern Android UI principles.
 
-## 20. Conclusion
+## 17. Conclusion
 The experiment successfully demonstrates how to navigate within an Android application using an Options Menu and how to embed web content securely using a WebView. The application handles networking, native menus, and Material UI aesthetics perfectly.
