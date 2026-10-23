@@ -92,18 +92,6 @@ The application running on an Android phone, showing a filtered contact list and
 
 <img src="screenshots/device-search-identity.jpg" alt="TC03 search for mc showing two matches and Shrawan Gautam with USN 25MCAR0229" width="360">
 
-## GitHub submission
-Create an empty GitHub repository, open a terminal in this folder and run:
-```sh
-git init
-git add .
-git commit -m "Add Experiment 10 Contacts Content Provider"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-git push -u origin main
-```
-Replace the URL with your own repository. Upload README.md and the entire screenshots folder together, preserving their relative locations. The README images use relative paths so they render on GitHub. Do not upload local.properties, build directories or .gradle caches. Submit the repository link to your professor.
-
 ## Limitations
 This teaching application uses a simple scrolling list intended for small demonstration address books. It shares plain text, not a vCard. Actual sharing targets depend on installed apps. Contact insertion requires an installed Contacts editor. The application reloads on resume/refresh rather than continuously observing provider changes.
 
