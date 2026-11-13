@@ -67,10 +67,10 @@ Test2SmartExpenceTracker/
 │       │       ├── drawable/           Vector icons (wallet, alarm, history, delete, bell)
 │       │       └── values/             Colors, strings, and Material 3 themes
 └── screenshots/
-    ├── screenshot-dashboard-main.png
-    ├── screenshot-timepicker-hour.png
-    ├── screenshot-timepicker-minute.png
-    └── screenshot-dashboard-success.png
+    ├── dashboard-main.jpeg
+    ├── timepicker-hour.jpeg
+    ├── timepicker-minute.jpeg
+    └── dashboard-success.jpeg
 ```
 
 ## Procedure
@@ -86,7 +86,7 @@ Test2SmartExpenceTracker/
 
 The application running on an Android phone, showing the hero balance summary card, reminder time picker controls, balance entry form, and recent balance records:
 
-<img src="screenshots/screenshot-dashboard-main.png" alt="SmartExpenseTracker dashboard showing hero balance card and reminder controls" width="360">
+<img src="screenshots/dashboard-main.jpeg" alt="SmartExpenseTracker dashboard showing hero balance card and reminder controls" width="360">
 
 ## Three Test Cases
 
@@ -96,8 +96,8 @@ The application running on an Android phone, showing the hero balance summary ca
 **Expected:** The reminder time updates on the dashboard and the daily alarm is successfully scheduled via AlarmManager.  
 **Actual result:** PASS. The supplied screenshot shows the interactive Material TimePicker dialog capturing the scheduled reminder time.
 
-<img src="screenshots/screenshot-timepicker-hour.png" alt="TC01 TimePicker hour selection" width="360">
-<img src="screenshots/screenshot-timepicker-minute.png" alt="TC01 TimePicker minute selection" width="360">
+<img src="screenshots/timepicker-hour.jpeg" alt="TC01 TimePicker hour selection" width="360">
+<img src="screenshots/timepicker-minute.jpeg" alt="TC01 TimePicker minute selection" width="360">
 
 ### TC02 — Save Balance Update & Stop Ringtone
 **Precondition:** Reminder notification has triggered with continuous ringtone playback.  
@@ -105,7 +105,7 @@ The application running on an Android phone, showing the hero balance summary ca
 **Expected:** Balance is saved to SQLite, active notification & ringtone stop immediately, next reminder is rescheduled, and success snackbar appears.  
 **Actual result:** PASS. The captured screenshot shows the success snackbar confirming balance update and reminder rescheduling, along with updated history records.
 
-<img src="screenshots/screenshot-dashboard-success.png" alt="TC02 Balance updated success and history records" width="360">
+<img src="screenshots/dashboard-success.jpeg" alt="TC02 Balance updated success and history records" width="360">
 
 ### TC03 — View Balance History & Delete Record
 **Precondition:** Multiple balance records exist in SQLite.  
