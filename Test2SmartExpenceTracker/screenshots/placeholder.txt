@@ -1,0 +1,5 @@
+Place your app screenshots in this folder with the exact filenames referenced in README.md:
+1. screenshot-dashboard-main.png (Dashboard overview with current balance)
+2. screenshot-timepicker-hour.png (TimePicker hour selection dialog)
+3. screenshot-timepicker-minute.png (TimePicker minute selection dialog)
+4. screenshot-dashboard-success.png (Balance updated success snackbar & records list)

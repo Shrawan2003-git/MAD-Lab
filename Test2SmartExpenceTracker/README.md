@@ -1,13 +1,13 @@
-# SmartExpenseTracker — Expense Reminder and Balance Management Application
+# SmartExpenseTracker
 
-**Manage expenses through scheduled ringtone reminders and daily balance updates.**  
+**Expense Reminder and Balance Management Application**  
 **Student:** Shrawan Gautam  
 **USN:** 25MCAR0229  
 **Language:** Kotlin · Native Android · XML layouts · Material 3
 
 ## Aim
 
-Develop an Android application called **SmartExpenseTracker** that helps users manage their expenses through scheduled reminders, continuous ringtone alerts, and daily account balance updates persisted in a local SQLite database.
+Develop an Android application called **SmartExpenseTracker** that helps users manage their expenses through scheduled ringtone reminders and daily account balance updates persisted in a local SQLite database.
 
 ## Concept and technology
 
@@ -31,11 +31,15 @@ SmartExpenseTracker integrates core Android components and APIs:
 - Automatic ringtone and notification termination upon saving balance update.
 - SQLite balance history RecyclerView with timestamp badges and delete action.
 
+## Demonstration scenario
+
+Open SmartExpenseTracker, view the current account balance and total entries in the hero summary card. Set a reminder time using the TimePicker dialog and enable daily reminders. When the alarm triggers, listen to the continuous ringtone and observe the notification. Tap the notification to jump straight to the balance update form, enter your remaining balance, and tap **Save Balance Update** to dismiss the alarm, stop the ringtone, reschedule the next reminder, and record the balance in SQLite.
+
 ## Folder and file structure
 
 ```text
 Test2SmartExpenceTracker/
-├── README.md                           Explanation, setup and architecture overview
+├── README.md                           Explanation, setup and screenshot evidence
 ├── .gitignore                          Generated and machine-local exclusions
 ├── settings.gradle.kts                 Repositories and app module configuration
 ├── build.gradle.kts                    Android Gradle Plugin version
@@ -62,6 +66,11 @@ Test2SmartExpenceTracker/
 │       │       ├── layout/             Dashboard and history card XML layouts
 │       │       ├── drawable/           Vector icons (wallet, alarm, history, delete, bell)
 │       │       └── values/             Colors, strings, and Material 3 themes
+└── screenshots/
+    ├── screenshot-dashboard-main.png
+    ├── screenshot-timepicker-hour.png
+    ├── screenshot-timepicker-minute.png
+    └── screenshot-dashboard-success.png
 ```
 
 ## Procedure
@@ -73,76 +82,36 @@ Test2SmartExpenceTracker/
 5. Design the Material 3 UI (`activity_main.xml` and `item_balance_record.xml`) with hero balance summary, reminder controls, and balance entry form.
 6. Wire up `MainActivity` to handle time picking, SQLite insertions, notification intent launching, and automatic ringtone stopping upon saving.
 
-## Main Implementation Code
+## Output
 
-### Ringtone & Alarm Management (`RingtoneHelper.kt`)
-```kotlin
-object RingtoneHelper {
-    private var mediaPlayer: MediaPlayer? = null
+The application running on an Android phone, showing the hero balance summary card, reminder time picker controls, balance entry form, and recent balance records:
 
-    fun playRingtone(context: Context) {
-        stopRingtone()
-        try {
-            val soundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM)
-                ?: RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE)
-            mediaPlayer = MediaPlayer().apply {
-                setDataSource(context, soundUri)
-                setAudioAttributes(
-                    AudioAttributes.Builder()
-                        .setUsage(AudioAttributes.USAGE_ALARM)
-                        .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
-                        .build()
-                )
-                isLooping = true
-                prepare()
-                start()
-            }
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-    }
+<img src="screenshots/screenshot-dashboard-main.png" alt="SmartExpenseTracker dashboard showing hero balance card and reminder controls" width="360">
 
-    fun stopRingtone() {
-        try {
-            mediaPlayer?.let {
-                if (it.isPlaying) it.stop()
-                it.release()
-            }
-        } catch (e: Exception) {
-            e.printStackTrace()
-        } finally {
-            mediaPlayer = null
-        }
-    }
-}
-```
+## Three Test Cases
 
-### BroadcastReceiver & Notification (`ReminderReceiver.kt`)
-```kotlin
-class ReminderReceiver : BroadcastReceiver() {
-    override fun onReceive(context: Context, intent: Intent?) {
-        val reminderManager = ReminderManager(context)
-        RingtoneHelper.playRingtone(context)
-        createNotificationChannel(context)
-        showNotification(context)
-        if (reminderManager.isReminderEnabled) {
-            reminderManager.scheduleDailyReminder()
-        }
-    }
+### TC01 — Set Reminder Time via TimePicker
+**Precondition:** App is open and reminder toggle is active.  
+**Steps:** Tap **Set Reminder Time**, select the desired hour and minute in the TimePicker dialog, and tap **OK**.  
+**Expected:** The reminder time updates on the dashboard and the daily alarm is successfully scheduled via AlarmManager.  
+**Actual result:** PASS. The supplied screenshot shows the interactive Material TimePicker dialog capturing the scheduled reminder time.
 
-    companion object {
-        fun cancelNotification(context: Context) {
-            RingtoneHelper.stopRingtone()
-            val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-            notificationManager.cancel(1002)
-        }
-    }
-}
-```
+<img src="screenshots/screenshot-timepicker-hour.png" alt="TC01 TimePicker hour selection" width="360">
+<img src="screenshots/screenshot-timepicker-minute.png" alt="TC01 TimePicker minute selection" width="360">
+
+### TC02 — Save Balance Update & Stop Ringtone
+**Precondition:** Reminder notification has triggered with continuous ringtone playback.  
+**Steps:** Open app from notification or dashboard, enter remaining balance ($1,000.00), and tap **Save Balance Update**.  
+**Expected:** Balance is saved to SQLite, active notification & ringtone stop immediately, next reminder is rescheduled, and success snackbar appears.  
+**Actual result:** PASS. The captured screenshot shows the success snackbar confirming balance update and reminder rescheduling, along with updated history records.
+
+<img src="screenshots/screenshot-dashboard-success.png" alt="TC02 Balance updated success and history records" width="360">
+
+### TC03 — View Balance History & Delete Record
+**Precondition:** Multiple balance records exist in SQLite.  
+**Steps:** Scroll to **Recent Balance Records** and inspect previous entries. Tap the delete icon on any record.  
+**Expected:** The selected record is deleted from SQLite and the RecyclerView list and hero summary count update instantly.  
+**Actual result:** PASS. Balance records display with formatted currency and timestamps, supporting real-time item removal.
 
 ## Verification Record
-
-- **App Build**: Gradle assembleDebug build completed successfully (`PASS`).
-- **Alarm & Ringtone**: Continuous ringtone playback starts upon alarm broadcast and immediately stops when user saves a balance entry.
-- **SQLite Database**: Balance records correctly persist across app sessions with timestamps and optional notes.
-- **Student Identity**: Shrawan Gautam (25MCAR0229).
+Verified on Pixel emulator and physical Android devices. Build status: **PASS**.
