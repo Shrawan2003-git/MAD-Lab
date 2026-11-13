@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SmartExpenseTracker</string>
+    <string name="dashboard_subtitle">Expense Reminder &amp; Balance Management</string>
+    <string name="current_balance_label">Current Account Balance</string>
+    <string name="last_updated_label">Last updated: </string>
+    <string name="no_records_yet">No balance history records yet</string>
+    <string name="daily_reminder_title">Daily Expense Reminder</string>
+    <string name="daily_reminder_desc">Set time to receive a daily prompt for balance update</string>
+    <string name="reminder_time_label">Reminder Time: </string>
+    <string name="change_time_btn">Set Reminder Time</string>
+    <string name="enter_balance_title">Update Account Balance</string>
+    <string name="balance_input_hint">Enter current remaining balance ($)</string>
+    <string name="balance_note_hint">Optional Note (e.g. Salary, Rent, Groceries)</string>
+    <string name="save_balance_btn">Save Balance Update</string>
+    <string name="balance_history_title">Recent Balance Records</string>
+    <string name="notification_channel_name">Expense Reminder Notifications</string>
+    <string name="notification_channel_desc">Daily reminders to update account balance</string>
+    <string name="notification_title">Daily Expense Reminder 💰</string>
+    <string name="notification_message">Time to update your remaining account balance! Tap to open.</string>
+    <string name="permission_required">Notification permission is required to deliver daily expense reminders.</string>
+    <string name="balance_saved_success">Balance updated &amp; reminder rescheduled!</string>
+    <string name="reminder_updated_success">Daily reminder updated!</string>
+    <string name="invalid_balance_error">Please enter a valid balance amount</string>
+</resources>
